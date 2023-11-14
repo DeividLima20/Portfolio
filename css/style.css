@@ -139,21 +139,25 @@ header{
 }
 nav.mobile{
     display: none;
-    border-bottom: 1px solid #cccccc8e;
+    border-bottom: 1px solid #283355;
     position: absolute;
+    z-index: 4;
     width: 100%;
     text-align: center;
-    padding: 8px 0;
+   
     top: 50px;
-    background-color: rgba(107, 107, 107, 0.253);
+    background-color: #0a0e1a;
 }
 nav.mobile ul{
     list-style-type: none;
 }
 nav.mobile li{
     cursor: pointer;
-    border-bottom: 1px solid #cccccc8e;
-    padding: 7px 0;
+    border-bottom: 1px solid #283355;
+    padding: 10px 0;
+}
+nav.mobile li:hover{
+    background-color: #3d3e4241;
 }
 nav.mobile a{
     color: white;
@@ -464,6 +468,12 @@ section.certificados > .container{
     body{
         overflow-x: hidden;
     }
+    .home{
+        padding: 0px;
+    }
+    .conteudo-single{
+        padding-right: 0;
+    }
     .conteudo-sobre{
         text-align: center;
     }
@@ -542,4 +552,12 @@ section.certificados > .container{
         display: block;
     }
 }
-
+@media screen and (max-width: 500px){
+    .conteudo-single{
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .perfil{
+        display: none;
+    }
+}
